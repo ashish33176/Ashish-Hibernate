@@ -1,18 +1,16 @@
 package com.hbn.main;
 
 import com.hbn.entity.Employee;
-
-import jakarta.transaction.Transaction;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		Employee e = new Employee(1, "Vikas", "male", 330000);
+		Employee e = new Employee("Vikas", "male", 330000);
 		
 		
 //     1.
