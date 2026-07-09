@@ -18,12 +18,19 @@ public class Main {
 		
 		Session session = HibernateConfig.getSessionFactory().openSession();
         Transaction tx = session.beginTransaction();
+        
+ //       session.load(e1, 4);
 		
-		session.persist(e1);
+		Employee employee =session.find(Employee.class, 555);
 		
+//		System.out.println(e1);
+		
+		System.out.println(employee);
 		
 		tx.commit();
 			
+		
+		
 		
 
 	}
