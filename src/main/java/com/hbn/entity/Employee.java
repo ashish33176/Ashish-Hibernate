@@ -27,7 +27,7 @@ public class Employee {
 	private int salary;
 	
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.ALL)
 	private List<Address> address;
 	
 	public Employee() {
